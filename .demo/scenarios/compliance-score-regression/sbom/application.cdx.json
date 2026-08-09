@@ -1,0 +1,160 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:19cb9c25-0000-4000-8000-80900caf0bb8",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-08-09T00:00:00Z",
+    "authors": [
+      {
+        "name": "SBOMlyze Demo",
+        "email": "security@example.com"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "syft",
+          "version": "1.42.3"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "metadata-root",
+      "name": "sbomlyze-node-cyclonedx-demo",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "pkg:npm/sbomlyze-node-cyclonedx-demo@1.0.0",
+      "name": "sbomlyze-node-cyclonedx-demo",
+      "version": "1.0.0",
+      "supplier": {
+        "name": "SBOMlyze Demo <security@example.com>"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "27638584a39be2dd8fb66f41dfd0b48b94ed99af68d8f58232de96ccf218e946"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "b48b036649c108218e4f32bda10b8cccd6b7f7919581e32b3074a2dca569061b6fb5969dfa85f1e2e25d2d1652725173240c18a514c21ee37e07547a7f818446"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/sbomlyze-node-cyclonedx-demo@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/fastify@5.4.0",
+      "name": "fastify",
+      "version": "5.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3b87b1db6f16aca869306ea7b58ce47a00ef3614f6d9cada9863d0b9c52c1df1"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "19da8796785403e47757a05b859130de61779b6fd9d7bc7d3e992bc18bf28e38bfb5776f4c9cdc0af30076aa5494a10109b43715a8cb3feb74c0c882a4b7be7d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fastify@5.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/pino@9.9.0",
+      "name": "pino",
+      "version": "9.9.0",
+      "supplier": {
+        "name": "pino maintainers <security@example.com>"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7b49b7c67946dc0b7f38505d16d10b34f9fd0472bc187fe573cbc03029433414"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "4e371248e18176500e3b7352d7f693b2e733a62303fd35dc98bb8a322bcbfb6b45453edc151b684145ee0f65e5cdf4505ef0b081eb448604cc5dd2e2a3f888a8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/pino@9.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/abstract-logging@2.0.1",
+      "name": "abstract-logging",
+      "version": "2.0.1",
+      "supplier": {
+        "name": "abstract-logging maintainers <security@example.com>"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "72c3f5cb0b07c1bf6e1209afbd97f2fcb5c87a2513db7d2d841900dc18d74289"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "a7c867f3dd3a39befc3f4b79cbfa32a1858b34140686fe0da4cd81f7e32d2afcea7f49c677c65552ee3380115f3c717f1f661095f97bb0d3f840aeb8766fb313"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/abstract-logging@2.0.1"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:npm/sbomlyze-node-cyclonedx-demo@1.0.0",
+      "dependsOn": [
+        "pkg:npm/fastify@5.4.0",
+        "pkg:npm/pino@9.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/fastify@5.4.0",
+      "dependsOn": [
+        "pkg:npm/abstract-logging@2.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/pino@9.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/abstract-logging@2.0.1",
+      "dependsOn": []
+    }
+  ]
+}
