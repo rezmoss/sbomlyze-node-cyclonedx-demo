@@ -60,9 +60,6 @@
       "bom-ref": "pkg:npm/fastify@5.4.0",
       "name": "fastify",
       "version": "5.4.0",
-      "supplier": {
-        "name": "fastify maintainers <security@example.com>"
-      },
       "hashes": [
         {
           "alg": "SHA-256",
