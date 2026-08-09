@@ -135,6 +135,33 @@
         }
       ],
       "purl": "pkg:npm/abstract-logging@2.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/copyleft-widget@3.0.0",
+      "name": "copyleft-widget",
+      "version": "3.0.0",
+      "supplier": {
+        "name": "copyleft-widget maintainers <security@example.com>"
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7e9e4b9de7d2184c66d44683dea8594d226bb76f481d78715fb0a7644150ce06"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "585ab35ad798369697b2a28cb6172d6e00201185afc371647de9c151f6a7bd1c42a0cb94dbe90331cf63f5639ef057b89ea3382f049b68e79b1290bdd7a7e17b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:npm/copyleft-widget@3.0.0"
     }
   ],
   "dependencies": [
@@ -142,7 +169,8 @@
       "ref": "pkg:npm/sbomlyze-node-cyclonedx-demo@1.0.0",
       "dependsOn": [
         "pkg:npm/fastify@5.4.0",
-        "pkg:npm/pino@9.9.0"
+        "pkg:npm/pino@9.9.0",
+        "pkg:npm/copyleft-widget@3.0.0"
       ]
     },
     {
@@ -157,6 +185,10 @@
     },
     {
       "ref": "pkg:npm/abstract-logging@2.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/copyleft-widget@3.0.0",
       "dependsOn": []
     }
   ]
